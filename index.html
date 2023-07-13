@@ -18,6 +18,26 @@
   h6 {
     font-family: "Segoe UI", sans-serif
   }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 </style>
 <script src=""></script>
 
@@ -28,7 +48,7 @@
   <img alt="logo"
     src="http://neotalk.net.br/wp-content/uploads/2020/10/Logotipo-Positivo-Alta-e1607879051513-1024x494.png"
     width="50%">
-  <div>
+  <!-- <div>
     <h6 class="">HyperaHana - Enterprise In-House App distribution. V.2.3</h6>
   </div>
 
@@ -52,8 +72,54 @@
       <li>App está pronto para o uso.</li>
     </ol>
 
+  </div> -->
+
+  <div class="row">
+    <div class="column">
+      <h1>App Cris - Scania </h1>
+
+      <p>Escolha sua plataforma:
+      <div class="row">
+        <div class="column">
+          <a href="https://www.dropbox.com/s/11dr4ysgmpehxs8/app-release.apk?dl=1" download="w3logo">
+            <img src="./images/android-flat.png" alt="android" width="144" height="142">
+          </a>
+        </div>
+        <div class="column">
+          <a href="https://www.dropbox.com/s/11dr4ysgmpehxs8/app-release.apk?dl=1" download="w3logo">
+            <img src="./images/ios.png" alt="android" width="144" height="142">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <h1>App Julia - Scania </h1>
+
+      <p>Escolha sua plataforma:
+      <div class="row">
+        <div class="column">
+          <a href="https://www.dropbox.com/s/11dr4ysgmpehxs8/app-release.apk?dl=1" download="w3logo">
+            <img src="./images/android-flat.png" alt="android" width="144" height="142">
+          </a>
+        </div>
+        <div class="column">
+          <a href="https://www.dropbox.com/s/11dr4ysgmpehxs8/app-release.apk?dl=1" download="w3logo">
+            <img src="./images/ios.png" alt="android" width="144" height="142">
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <p>Instruções de instalação: <a
+      href="https://developer.android.com/distribute/marketing-tools/alternative-distribution?hl=pt-br">Android</a></p>
+
+  </p>
+  <p>Instruções de instalação: <a
+      href="https://developer.android.com/distribute/marketing-tools/alternative-distribution?hl=pt-br">iOS</a></p>
+
+  </p>
 
 
 </body>
